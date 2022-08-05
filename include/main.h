@@ -6,11 +6,10 @@
 #include "printf.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "stdfunc.h"
 
 //////////////////// Device ////////////////////
-#include "tft_lcd.h"
 #include "gui.h"
-#include "eeprom.h"
 #include "ws2812.h"
 #include "select.h"
 
