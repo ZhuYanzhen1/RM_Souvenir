@@ -1,10 +1,10 @@
-#include "main.h"
 #include "stm32f4xx_it.h"
-#include "usart.h"
-#include "tim.h"
+#include "stm32f4xx_hal.h"
 
 extern DMA_HandleTypeDef hdma_adc1;
 extern TIM_HandleTypeDef htim4;
+extern DMA_HandleTypeDef hdma_tim1_ch1;
+extern UART_HandleTypeDef huart1;
 
 void NMI_Handler(void) {
     while (1);

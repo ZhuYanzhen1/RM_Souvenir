@@ -31,8 +31,7 @@ add_compile_options($<$<COMPILE_LANGUAGE:ASM>:-x$<SEMICOLON>assembler-with-cpp>)
 
 add_compile_options(-O1)
 
-include_directories(include/system include/device include/freertos include/shell include/stm32
-        include include/hardware)
+include_directories(include/system include/device include/freertos include/shell include/stm32 include)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC)
 
