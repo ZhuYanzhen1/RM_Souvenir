@@ -19,13 +19,13 @@ void led_control(void *pvParameters) {
         if (direction == 0) {
             lightning = lightning + 1;
             show_color_with_lightning(lightning);
-            delayms(20);
+            delayms(40);
             if (lightning == 25)
                 direction = 1;
         } else {
             lightning = lightning - 1;
             show_color_with_lightning(lightning);
-            delayms(20);
+            delayms(40);
             if (lightning == 0) {
                 delayms(300);
                 direction = 0;
